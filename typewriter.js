@@ -1,16 +1,16 @@
-const sentence = "hello there from lighthouse labs";
-//console.log('12th index is: ', sentence.indexOf('f'));
-let timeDelay = 50;
+let sentence = "hello there from lighthouse labs";
+
+sentence += '\n';
+
+let delay = 0;
 for (const char of sentence) {
-  //process.stdout.write(timeDelay);
-  
   setTimeout(() => {
     process.stdout.write(char);
-    
-  }, timeDelay += 100);
-  
-    
+
+  }, delay);
+  delay += 100;
 }
-setTimeout(() => {
-  process.stdout.write('\n');
-}, 4000);
+
+// setTimeout(() => {
+//   process.stdout.write('\n');
+// }, 8000);
